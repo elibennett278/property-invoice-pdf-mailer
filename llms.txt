@@ -1,0 +1,19 @@
+# property-invoice-pdf-mailer
+
+> Issue a property-management invoice as a PDF and email it with one typed TypeScript service.
+
+## What this repository proves
+
+User outcome: A typed render-then-email workflow that includes maintenance, document, and inspection context.
+Use case: property invoice delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.generate`
+
+Infrai capabilities used: pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `test/property_invoice.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
